@@ -22,4 +22,5 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build on EAS
-        run: eas build --platform all --non-interactive
+        # run: eas build --platform all --non-interactive
+        run: eas build --profile production --platform android
