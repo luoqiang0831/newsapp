@@ -18,7 +18,7 @@ jobs:
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: WHTgvG0VVpJ1Z3tkiwrmmTramMRnNHF1hwu_w7nO
+          token: ${{ secrets.EXPO_TOKEN }}
       - name: Install dependencies
         run: yarn
       - name: Build on EAS
