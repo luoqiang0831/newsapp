@@ -1,5 +1,6 @@
-import axios from 'axios';
-import statusHandler from './statusHandler';
+import axios from "axios";
+
+import statusHandler from "./statusHandler";
 
 // Add a request interceptor
 axios.interceptors.request.use(
@@ -8,7 +9,7 @@ axios.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
-  },
+  }
 );
 
 // Add a response interceptor
@@ -19,7 +20,7 @@ axios.interceptors.response.use(
   function (error) {
     statusHandler(error);
     return Promise.reject(error);
-  },
+  }
 );
 
 export default axios;
