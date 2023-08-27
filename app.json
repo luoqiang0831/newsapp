@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "scheme": "tamagui-app",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#ddffe2",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "icon": "./assets/icon.png",
+    "name": "tamagui-app",
+    "slug": "news-app",
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1f833ba2-57e3-4f75-b407-253f613e3c31"
+      }
+    },
+    "owner": "luoqiang0831",
+    "android": {
+      "package": "com.newsapp"
+    }
+  }
+}
